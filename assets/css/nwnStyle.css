@@ -6,12 +6,10 @@ body {
   line-height: 1.5;
   background-color: rgb(243, 243, 243);
 }
-
 /* -- header -- */
 header {
   background-color: rgb(19, 50, 59);
 }
-
 .container1 {
   margin: 0 auto;
   width: 95%;
@@ -19,11 +17,9 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
 .hidden-icons img {
   width: 20px;
 }
-
 .date {
   color: #f3f3f3;
   font-size: small;
@@ -34,43 +30,35 @@ nav {
   background-color: rgb(28, 141, 255);
   display: none;
 }
-
 .container2 {
   margin: 0 auto;
   width: 95%;
 }
-
 ul.nav-container {
   display: flex;
   padding: 0;
   justify-content: space-between;
 }
-
 .nav-container li {
   list-style: none;
   padding-left: 5px;
 }
-
 .nav-container a {
   text-decoration: none;
   color: rgb(19, 50, 59);
 }
-
 .nav-container a:hover {
   background-color: rgb(19, 50, 59);
   color: rgb(28, 141, 255);
 }
-
 .search-button {
   display: none;
 }
-
 .search-button input {
   border: 1px solid rgb(19, 50, 59);
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 .search-button button {
   border: 1px solid rgb(19, 50, 59);
   border-radius: 4px;
@@ -85,26 +73,21 @@ ul.nav-container {
 .publicity {
   margin-top: 20px;
 }
-
 .publicity img {
   width: 100%;
 }
-
 /* -- main new -- */
 .container3 {
   margin: 0 auto;
   max-width: 425px;
   width: 90%;
 }
-
 .container3 img {
   width: 100%;
 }
-
 .section-content {
   text-decoration: none;
 }
-
 .box1 {
   background: rgb(19, 50, 59);
   color: white;
@@ -114,22 +97,19 @@ ul.nav-container {
   font-size: 17px;
   margin: 0;
 }
-
 .box1 h1:hover {
   color: rgb(28, 141, 255);
   text-decoration: underline;
 }
-
 .box1 p {
   font-size: 14px;
   margin: 0;
 }
-
 .box1 p:hover {
   color: rgb(28, 141, 255);
   text-decoration: underline;
 }
-
+/* -- opinion -- */
 .opinion {
   display: none;
   flex-direction: column;
@@ -148,45 +128,38 @@ ul.nav-container {
 .opinion a {
   text-decoration: none;
 }
-
 .opinion-style {
   color: rgb(19, 50, 59);
   font-size: larger;
   font-style: italic;
   text-decoration: underline;
 }
-
 .opinion-title {
   color: rgb(19, 50, 59);
   font-weight: 600;
 }
-
 .author {
   color: rgb(59, 83, 90);
   font-size: small;
   margin: 5px 0;
 }
-
 .opinion-p {
   margin: 5px 0;
   color: rgb(19, 50, 59);
 }
-
+/*  -- weather box -- */
 .weather {
   display: none;
   width: 95%;
 }
-
 /* -- secondary news -- */
 .box2 {
   padding: 0;
 }
-
 .box2 li {
   list-style: none;
   margin: 10px 0;
 }
-
 .box2 a {
   display: flex;
   font-size: 14px;
@@ -195,44 +168,36 @@ ul.nav-container {
   color: rgb(19, 50, 59);
   font-weight: 600;
 }
-
 .box2 a:hover {
   text-decoration: underline;
   color: rgb(28, 141, 255);
 }
-
 .box2 img {
   width: 45%;
   margin-right: 5px;
 }
-
 /* -- only title news -- */
 .more {
   border-top: 2px rgb(28, 141, 255) solid;
   margin-bottom: 20px;
 }
-
 .more h2 {
   color: rgb(19, 50, 59);
   margin-bottom: 10px;
 }
-
 .more ul {
   padding-left: 7%;
 }
 .more li {
   margin-bottom: 10px;
 }
-
 .more a {
   color: rgb(19, 50, 59);
 }
-
 .more a:hover {
   color: rgb(28, 141, 255);
   text-decoration: underline;
 }
-
 .read {
   text-decoration: none;
   color: rgb(19, 50, 59);
@@ -242,19 +207,16 @@ ul.nav-container {
   background-color: rgb(19, 50, 59);
   color: rgb(28, 141, 255);
 }
-
 /* -- contact -- */
 .contact {
   border-top: 2px rgb(28, 141, 255) solid;
 }
-
 .box3 {
   margin-top: 20px;
   color: rgb(19, 50, 59);
   font-size: 20px;
   font-weight: 600;
 }
-
 /* -- form -- */
 .box4 ul {
   padding: 0;
@@ -264,23 +226,19 @@ ul.nav-container {
   display: flex;
   flex-direction: column;
 }
-
 .box4 label {
   color: rgb(19, 50, 59);
 }
-
 .box4 input {
   border: 1px solid rgb(19, 50, 59);
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 .box4 textarea {
   border: 1px solid rgb(19, 50, 59);
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 .button {
   border: 1px solid rgb(19, 50, 59);
   border-radius: 4px;
@@ -288,18 +246,14 @@ ul.nav-container {
   margin-top: 10px;
   width: 25%;
 }
-
 .button:hover {
   border: 1px solid rgb(28, 141, 255);
 }
-
 /* -- footer -- */
-
 footer {
   background-color: rgb(28, 141, 255);
   border-top: 2px rgb(19, 50, 59) solid;
 }
-
 .container4 {
   display: flex;
   margin: 0 auto;
@@ -308,11 +262,9 @@ footer {
   align-items: center;
   border-bottom: 2px rgb(19, 50, 59) solid;
 }
-
 .icon img {
   width: 25px;
 }
-
 .container5 {
   display: flex;
   margin: 0 auto;
@@ -320,22 +272,18 @@ footer {
   padding: 0;
   flex-wrap: wrap;
 }
-
 .container5 li {
   width: 33.33%;
   list-style-position: inside;
 }
-
 .container5 a {
   text-decoration: none;
   color: rgb(19, 50, 59);
   font-size: 17px;
 }
-
 .container5 a:hover {
   text-decoration: underline;
 }
-
 footer p {
   margin: 0 auto;
   width: 90%;
