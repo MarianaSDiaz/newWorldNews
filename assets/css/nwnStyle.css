@@ -4,11 +4,12 @@ body {
   border: 0;
   font-family: 'Arial Narrow', 'Franklin Gothic Medium', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgb(243, 243, 243);
+  background-color: #dde6f1;
 }
 /* -- header -- */
 header {
   background-color: rgb(19, 50, 59);
+  background-image: linear-gradient(#13323b, #1c8dff);
 }
 .container1 {
   margin: 0 auto;
@@ -28,6 +29,7 @@ header {
 /* -- Nav bar -- */
 nav {
   background-color: rgb(28, 141, 255);
+  background-image: linear-gradient(#1c8dff, #13323b);
   display: none;
 }
 .container2 {
@@ -46,6 +48,7 @@ ul.nav-container {
 .nav-container a {
   text-decoration: none;
   color: rgb(19, 50, 59);
+  font-weight: 500;
 }
 .nav-container a:hover {
   background-color: rgb(19, 50, 59);
@@ -113,9 +116,10 @@ ul.nav-container {
 .opinion {
   display: none;
   flex-direction: column;
-  padding-left: 10px;
+  padding: 10px;
   line-height: 15px;
-  border-left: 1px #858585 solid;
+  border: 1px #858585 solid;
+  background-color: ghostwhite;
 }
 .opinion ul {
   padding: 0;
@@ -151,6 +155,9 @@ ul.nav-container {
 .weather {
   display: none;
   width: 95%;
+}
+.weather img {
+  margin: 10px;
 }
 /* -- secondary news -- */
 .box2 {
@@ -210,6 +217,10 @@ ul.nav-container {
 /* -- contact -- */
 .contact {
   border-top: 2px rgb(28, 141, 255) solid;
+  border: 2px rgb(27 59 90) solid;
+  background-image: linear-gradient(#3fd4ff, #1c8dff);
+  margin: 10px 0px;
+  padding: 10px;
 }
 .box3 {
   margin-top: 20px;
@@ -251,8 +262,9 @@ ul.nav-container {
 }
 /* -- footer -- */
 footer {
-  background-color: rgb(28, 141, 255);
+  /* background-color: rgb(28, 141, 255); */
   border-top: 2px rgb(19, 50, 59) solid;
+  background-image: linear-gradient(#13323b, #1c8dff);
 }
 .container4 {
   display: flex;

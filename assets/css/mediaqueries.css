@@ -29,10 +29,13 @@
     display: flex;
     flex-wrap: wrap;
     border-bottom: 2px rgb(28, 141, 255) solid;
+    justify-content: space-between;
+    padding-bottom: 40px;
   }
   .box2 li {
     display: flex;
-    width: 50%;
+    width: 49%;
+    border: 1px solid rgb(19, 50, 59);
   }
   .box2 a {
     display: flex;
@@ -42,6 +45,7 @@
   }
   .box2 img {
     width: 100%;
+    margin: 0;
   }
   .box2 p {
     width: 95%;
@@ -62,7 +66,9 @@
   }
   .contact {
     width: 45%;
-    border-top: none;
+    border: none;
+    background-image: inherit;
+    padding: 0;
   }
 }
 @media screen and (min-width: 768px) {
