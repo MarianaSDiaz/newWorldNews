@@ -2,6 +2,10 @@
 
 This is the third task of the Software Development course.
 
-GitHub pages: 
+# GitHub pages: 
 
 https://marianasdiaz.github.io/newWorldNews/
+
+# PS05:
+
+https://marianasdiaz.github.io/newWorldNews/suscription.html
