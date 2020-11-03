@@ -10,12 +10,16 @@ const city = document.getElementById('city');
 const postalCode = document.getElementById('postalcode');
 const dni = document.getElementById('dni');
 const susbutton = document.getElementById('sus-button')
+const nameSpan = document.getElementById('name-span');
 
 // -- name input -- 
-fname.onkeydown = function() {keyDown()};
 fname.onblur = function() {validNameInput(fname.value)};
 fname.onfocus = function() {hideHiddenClass(0)};
+fname.onkeydown = function() {changeNameTitle()};
 
+function changeNameTitle() {
+    nameSpan.innerHTML = `Hi ${fname.value}`;
+}
 function validNameInput(input){
     if(input.length < 6 || (!input.includes(' '))){
         removeHiddenClass(0);
@@ -136,8 +140,6 @@ function validateDni(dniInput) {
     }
     return true;
 }
-
-
 //****************FUNCTIONS */
 function removeHiddenClass(index) {
     errorsElement[index].style.display = 'unset';  
@@ -151,60 +153,54 @@ function hideHiddenClass(index) {
 function buttonAlert() {
     var msg = '';
     if (validNameInput(fname.value)){
-        msg = msg + 'Full name: ' + fname.value;
+        msg = msg + 'Full name: ' + fname.value + '\n';
     } else {
-        msg = msg + 'Full name: ' + 'incorrect';
+        msg = msg + 'Full name: ' + 'incorrect' + '\n';
     }
     if (validateEmail(email.value)){
-        msg = msg + 'Email: ' + email.value;
+        msg = msg + 'Email: ' + email.value + '\n';
     } else {
-        msg = msg + 'Email: ' + 'incorrect';
+        msg = msg + 'Email: ' + 'incorrect' + '\n';
     }
     if (validatePassword(passw.value)){
-        msg = msg + 'Password: ' + passw.value;
+        msg = msg + 'Password: ' + passw.value + '\n';
     } else {
-        msg = msg + 'Password: ' + 'incorrect';
+        msg = msg + 'Password: ' + 'incorrect'+ '\n';
     }
     if (validateRPassword(rpassw.value)){
-        msg = msg + 'Repeat password: ' + rpassw.value;
+        msg = msg + 'Repeat password: ' + rpassw.value + '\n';
     } else {
-        msg = msg + 'Repeat password: ' + 'incorrect';
+        msg = msg + 'Repeat password: ' + 'incorrect' + '\n';
     }
     if (validateAge(age.value)){
-        msg = msg + 'Age: ' + age.value;
+        msg = msg + 'Age: ' + age.value + '\n';
     } else {
-        msg = msg + 'Age: ' + 'incorrect';
+        msg = msg + 'Age: ' + 'incorrect' + '\n';
     }
     if (validatePhnum(phnum.value)){
-        msg = msg + 'Phone number: ' + phnum.value;
+        msg = msg + 'Phone number: ' + phnum.value + '\n';
     } else {
-        msg = msg + 'Phone number: ' + 'incorrect';
+        msg = msg + 'Phone number: ' + 'incorrect' + '\n';
     }
     if (validateAdrss(adrss.value)){
-        msg = msg + 'Address: ' + adrss.value;
+        msg = msg + 'Address: ' + adrss.value + '\n';
     } else {
-        msg = msg + 'Address: ' + 'incorrect';
+        msg = msg + 'Address: ' + 'incorrect' + '\n';
     }
     if (validateCity(city.value)){
-        msg = msg + 'City: ' + city.value;
+        msg = msg + 'City: ' + city.value + '\n';
     } else {
-        msg = msg + 'City: ' + 'incorrect';
+        msg = msg + 'City: ' + 'incorrect' + '\n';
     }
     if (validatePostalCode(postalCode.value)){
-        msg = msg + 'Postal Code: ' + postalCode.value;
+        msg = msg + 'Postal Code: ' + postalCode.value + '\n';
     } else {
-        msg = msg + 'Postal Code: ' + 'incorrect';
+        msg = msg + 'Postal Code: ' + 'incorrect' + '\n';
     }
     if (validateDni(dni.value)){
-        msg = msg + 'DNI: ' + dni.value;
+        msg = msg + 'DNI: ' + dni.value + '\n';
     } else {
-        msg = msg + 'DNI: ' + 'incorrect';
+        msg = msg + 'DNI: ' + 'incorrect' + '\n';
     }
     alert(msg);
 }
-
-// -- title --
-// const chTitle = document.getElementsByClassName('chTitle');
-// function keyDown() {
-    
-// }

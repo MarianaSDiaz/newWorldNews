@@ -73,8 +73,11 @@ ul.nav-container {
   background-position: center;
 }
 /* -- form -- */
-.ch-title h1 {
-  color: #13323b;
+.ch-title {
+  color: rgb(19, 50, 59);
+  font-size: x-large;
+  font-weight: 600;
+  display: flex;
 }
 .form-container {
   margin: 0 auto;
